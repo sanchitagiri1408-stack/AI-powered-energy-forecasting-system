@@ -1,0 +1,63 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Packaging/build output
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# IDE and editor settings
+.idea/
+.vscode/
+*.code-workspace
+*.swp
+*.swo
+
+# Operating-system files
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+
+# Logs and local run traces
+*.log
+logs/
+*.out
+
+# Generated model binaries are large and may contain executable Python objects.
+# Keep models/README.md and metadata JSON trackable; opt in to a binary deliberately.
+models/*.joblib
+models/*.pkl
+models/*.pickle
+models/*.bin
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# Local notebooks/checkpoints
+.ipynb_checkpoints/
+
+# Do not ignore data/*.csv, outputs/metrics*.csv, outputs/forecast.csv, or
+# images/*.png: synthetic proof-of-work artifacts remain intentionally trackable.

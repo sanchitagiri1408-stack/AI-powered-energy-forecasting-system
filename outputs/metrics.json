@@ -1,0 +1,29 @@
+{
+  "selected_model": "RandomForestRegressor",
+  "train_rows": 6873,
+  "test_rows": 1719,
+  "seed": 42,
+  "days": 365,
+  "forecast_horizon": 24,
+  "backtest_note": "Test predictions are one-step-ahead backtests using observed lag history. Future predictions are recursive and feed predicted consumption into lag features.",
+  "models": [
+    {
+      "model": "SeasonalNaive",
+      "rmse": 100.79005048494906,
+      "mae": 57.02747411285631,
+      "r2": 0.4202387244432525
+    },
+    {
+      "model": "LinearRegression",
+      "rmse": 16.151848164975334,
+      "mae": 12.816811101830245,
+      "r2": 0.9851112470017694
+    },
+    {
+      "model": "RandomForestRegressor",
+      "rmse": 13.018764754775917,
+      "mae": 10.321200965677725,
+      "r2": 0.9903271726230554
+    }
+  ]
+}
